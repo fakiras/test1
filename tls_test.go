@@ -38,7 +38,7 @@ func (suite *TlsTestSuite) SetupSuite() {
 	for i := 0; i < 2; i++ {
 		_, err := suite.StartIgnite(testing2.WithSsl(), testing2.WithAuth())
 		if err != nil {
-			suite.T().Fatal("Failed start ignite", err)
+			suite.T().Fatal("Complete task error", err)
 		}
 	}
 }
